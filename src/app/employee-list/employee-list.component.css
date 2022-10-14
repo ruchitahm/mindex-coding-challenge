@@ -1,0 +1,13 @@
+::ng-deep .mat-figure {
+    display: block !important; 
+    position: relative !important;
+  }
+  
+  ::ng-deep .mat-grid-tile {
+    display: block !important;
+    position: initial !important;
+    padding-top: 1% !important;
+    width: 100% !important;
+   
+  }
+  

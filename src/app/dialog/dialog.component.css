@@ -1,0 +1,94 @@
+h2{ 
+    color: #2E4DA7;
+}
+
+/* Delete */
+
+mat-dialog-content{
+    color: #4a4545;
+}
+mat-dialog-actions{
+    display: block;
+}
+.hide1 {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0,0,0,0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
+}
+
+.button-ok , .button-cancel{
+    background-color: transparent;
+    color: #4a4545;
+    width: 35%;
+    box-shadow: 2px 2px #aca5a5;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: hidden;
+    outline: none
+}
+
+.button-cancel{
+    margin-left: 23%!important;
+}
+
+.button-ok{
+    margin-left: 7%!important;
+    
+}
+button:hover{
+    cursor: pointer;
+    background-color: #aca5a5;
+}
+
+/* Edit */
+
+.mat-form-field{
+    display: block;
+}
+
+fieldset{
+    color: #808080d4;;
+    border-radius: 5px;
+    border-color: #80808052;
+    padding: 3%;
+    margin: 10% 0;
+   
+}
+fieldset input{
+    border: none;
+    pointer-events: none;
+    color: #808080d4;
+   
+}
+fieldset input.compensation{
+    border: none;
+    pointer-events:initial ;
+    color:#4a4545;
+}
+.required-field::after {
+    content: "*";
+    color: red;
+}
+input {
+    outline:none;
+}
+
+.button-close , .button-save{
+    background-color: grey;
+    color: white;
+    width: 35%;
+}
+
+.button-close{
+    margin-left: 23%!important;
+}
+.button-save{
+    margin-left: 3%!important;
+}

@@ -1,0 +1,32 @@
+.employee{
+    color: #2E4DA7;
+    flex-direction: column;
+    display: flex;
+}
+
+.employee-directreports-details{
+    background-color:rgb(240 240 246);
+    margin: 0 2%;
+    margin-top: 1%;
+}
+.employee-directreports-details dt{
+    background-color: #696d7b;
+    color: white;
+    padding: 1%;
+}
+.employee-directreports-details dd{
+    color: #696d7b;
+    margin-left: 0%;
+    padding: 1%;
+}
+
+.hrline{
+    border-top: 1px solid rgb(240 240 246);
+    width: 98%;
+}
+
+.btn-edit,.btn-delete{
+    color: black;
+    float: right;
+    padding-right: 1%;
+}

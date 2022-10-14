@@ -1,0 +1,49 @@
+
+<!-- Delete Dialog -->
+<div id="deleterow">
+  <h2 mat-dialog-title>DELETE DIRECT REPORT</h2>
+  <mat-dialog-content>Permanently delete direct report
+    <br>
+    {{this.data.firstName}} {{this.data.lastName}} ?
+  </mat-dialog-content>
+  <br>
+  <mat-dialog-content>This action cannot be undone</mat-dialog-content>
+  <br>
+
+  <button class="button-ok" id="okbtn" mat-dialog-close (click)="onDelete()">OK </button>
+  <button class="button-cancel" [mat-dialog-close]="true">Cancel</button>
+
+</div>
+
+<!-- Edit Dialog -->
+<div id="editrow">
+  <h2 mat-dialog-title>UPDATE COMPENSATION</h2>
+  <form [formGroup]="editEmpFormGroup" class="edit-delete-container">
+    <fieldset>
+      <legend>First Name</legend>
+      <input formControlName="firstName" matInput placeholder="First Name" value="" [readonly]="!editable" />
+    </fieldset>
+
+    <fieldset>
+      <legend>Last Name</legend>
+      <input formControlName="lastName" matInput placeholder="Last Name" value="" [readonly]="!editable" />
+    </fieldset>
+    
+    <fieldset>
+      <legend>Title</legend>
+      <input formControlName="position" matInput placeholder="Title" value="" [readonly]="!editable" />
+    </fieldset>
+
+    <fieldset>
+      <legend>Compensation<span class="required-field"></span></legend>
+      <input class="compensation" formControlName="compensation" matInput placeholder="Compensation" value=""
+        required />
+    </fieldset>
+
+    <mat-dialog-actions>
+      <button class="button-save" mat-raised-button (click)="onSave()"> SAVE </button>
+      <button class="button-close" mat-button mat-dialog-close (click)="onCancel()"> CANCEL </button>
+    </mat-dialog-actions>
+  </form>
+
+</div>
